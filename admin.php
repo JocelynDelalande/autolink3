@@ -86,8 +86,8 @@ class admin_plugin_autolink3 extends DokuWiki_Admin_Plugin
 					$ret .="<td>".$lign[0]."</td><td>".$lign[1]."</td><td>".$lign[2]."</td>
 								<td>
 								
-			 						<input type='image' src='".DOKU_BASE."/lib/plugins/autolink3/ressources/delete.gif' name='supr' value='".$global."' alt='del' />
-			 						<input type='image' src='".DOKU_BASE."/lib/plugins/autolink3/ressources/edit.gif' name='mod' value='".$global."' alt ='edit' />
+			 						<input type='image' src='".DOKU_BASE."lib/plugins/autolink3/ressources/delete.gif' name='supr' value='".$global."' alt='del' />
+			 						<input type='image' src='".DOKU_BASE."lib/plugins/autolink3/ressources/edit.gif' name='mod' value='".$global."' alt ='edit' />
 			 					</td>
 			 				</tr>";
 				}
@@ -97,7 +97,7 @@ class admin_plugin_autolink3 extends DokuWiki_Admin_Plugin
 							<td><select name = 'new_page'>".'<option value='.$lign[1].'>'.$lign[1].'</option>'.$page_tree."</select></td>
 							<td><select name = 'new_locate'>".'<option value='.$lign[2].'>'.$lign[2].'</option>'.$data_tree."</select></td>
 							<td>
-			 					<input type='image' src='".DOKU_BASE."/lib/plugins/autolink3/ressources/add.gif' name='complete' value='sd".$global."' alt='add' />
+			 					<input type='image' src='".DOKU_BASE."lib/plugins/autolink3/ressources/add.gif' name='complete' value='sd".$global."' alt='add' />
 			 				</td></tr>";
 				}
 			}
@@ -147,9 +147,9 @@ class admin_plugin_autolink3 extends DokuWiki_Admin_Plugin
 				<input type='hidden' name='up' value='".$mem."' />
 				<table>
 					<tr>
-						<th><div style='width:80%;float:left;'>".$this->getLang('link')."</div><div align='right' style='width:16px;float:left;'><input type='image' src='".DOKU_BASE."/lib/plugins/autolink3/ressources/arrow_".($tab[0] ? "up" : "down").".gif' alt='sort' name='arrow' value ='0'/></div></th>
-						<th><div style='width:80%;float:left;'>".$this->getLang('to')."</div><div align='right' style='width:16px;float:left;'><input type='image' src='".DOKU_BASE."/lib/plugins/autolink3/ressources/arrow_".($tab[1] ? "up" : "down").".gif' alt='sort' name='arrow' value ='1'/></div></th>
-						<th><div style='width:80%;float:left;'>".$this->getLang('in')."</div><div align='right' style='width:16px;float:left;'><input type='image' src='".DOKU_BASE."/lib/plugins/autolink3/ressources/arrow_".($tab[2] ? "up" : "down").".gif' alt='sort' name='arrow' value ='2'/></div></th>
+						<th><div style='width:80%;float:left;'>".$this->getLang('link')."</div><div align='right' style='width:16px;float:left;'><input type='image' src='".DOKU_BASE."lib/plugins/autolink3/ressources/arrow_".($tab[0] ? "up" : "down").".gif' alt='sort' name='arrow' value ='0'/></div></th>
+						<th><div style='width:80%;float:left;'>".$this->getLang('to')."</div><div align='right' style='width:16px;float:left;'><input type='image' src='".DOKU_BASE."lib/plugins/autolink3/ressources/arrow_".($tab[1] ? "up" : "down").".gif' alt='sort' name='arrow' value ='1'/></div></th>
+						<th><div style='width:80%;float:left;'>".$this->getLang('in')."</div><div align='right' style='width:16px;float:left;'><input type='image' src='".DOKU_BASE."lib/plugins/autolink3/ressources/arrow_".($tab[2] ? "up" : "down").".gif' alt='sort' name='arrow' value ='2'/></div></th>
 						<th>".$this->getLang('action')." </th>
 					</tr>
 					".$word."
@@ -168,19 +168,19 @@ class admin_plugin_autolink3 extends DokuWiki_Admin_Plugin
 							</select>
 						</td>
 						<td>
-							<input type='image' src='".DOKU_BASE."/lib/plugins/autolink3/ressources/add.gif' alt='add' name='add' value = 1/>
+							<input type='image' src='".DOKU_BASE."lib/plugins/autolink3/ressources/add.gif' alt='add' name='add' value = 1/>
 						</td>
 					</tr>
 				</table>
 			</form>
-		<script type='text/javascript' src='".DOKU_BASE."/lib/plugins/autolink3/script.js'>
+		<script type='text/javascript' src='".DOKU_BASE."lib/plugins/autolink3/script.js'>
 		</script>
 		<fieldset class='pl_si_out'>
 			<button class='button' id='pl_si_gobtn' onclick='plugin_tagindex_go()'>
 				Rebuild Linkindex
 			</button>
 			<div id='pl_si_out'>
-        		<img src='".DOKU_BASE."/lib/images/loading.gif' id='pl_si_throbber' style='visibility: hidden' alt='load'/>		
+        		<img src='".DOKU_BASE."lib/images/loading.gif' id='pl_si_throbber' style='visibility: hidden' alt='load'/>		
 			</div>
 		</fieldset>
 	</div>";
