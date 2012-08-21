@@ -11,7 +11,7 @@
 if (!defined('DOKU_INC')) define('DOKU_INC', realpath(dirname(__FILE__) . '/../../../') . '/');
 if(!defined('DOKU_PLUGIN')) define('DOKU_PLUGIN',DOKU_INC.'lib/plugins/');
 if (!defined('DOKU_REG')) define ('DOKU_REG', DOKU_PLUGIN.'autolink3/register/');
-if (!defined('DOKU_PAGE')) define ('DOKU_PAGE', DOKU_INC.'data\pages');
+if (!defined('DOKU_PAGE')) define ('DOKU_PAGE', DOKU_INC.'data/pages');
 if (!defined('DOKU_PAGES')) define ('DOKU_PAGES', realpath(DOKU_PAGE));
 if (!defined('NL')) define('NL', "\n");
 
@@ -120,8 +120,6 @@ function is_link_application($page, $text)
 	$link = sort_tab_space($link);
 	foreach ($link as $elem):{
 		$locate = trim($elem[2]);
-		$page = realpath($page); 
-		$locate = realpath($locate); 
 		if (!strncmp($page, $locate, strlen($locate)))
 		{
 			$text = link_replace($text, $elem[0], $elem[1], DOKU_PAGE.str_replace(':', '/', $page));
